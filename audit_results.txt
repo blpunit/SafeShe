@@ -1,0 +1,10 @@
+GET /api/v1/profile/ -> 200
+GET /api/v1/settings/ -> 200
+GET /api/v1/dashboard/overview -> 200
+POST /api/v1/community/ (empty) -> 422
+POST /api/v1/community/ (valid) -> 201
+POST /api/v1/journeys/ (invalid) -> 422
+POST /api/v1/journeys/ (valid) -> 200
+  Got journey ID: 6a81ffa7c5b2f8fa9e7d0614
+POST /api/v1/journeys/6a81ffa7c5b2f8fa9e7d0614/start -> 200
+GET /api/v1/journeys/6a81ffa7c5b2f8fa9e7d0614/monitor -> 200
